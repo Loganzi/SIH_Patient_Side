@@ -9,7 +9,8 @@
 
 ## B. Git commands to use in your Git terminal!
 >Check this sheet out: (https://education.github.com/git-cheat-sheet-education.pdf)
-## C.Dependecies in 
+>If you are using at web GUI (well, why..?) pull/make a branch. Update you files (or edit it... copy paste? idek)
+## C. Dependecies in 
 - **Client**:
   >1. materialize-css@next
   >2. nodemailer
