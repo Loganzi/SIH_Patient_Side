@@ -65,19 +65,19 @@ const Form = () => {
         <h2 className="regFormH2">Registration Form</h2>
         <input
           type="text"
-          placeholder="Aadhar/Ration Card/Govt. ID"
+          placeholder="Aadhar/Ration Card/Govt. ID *"
           value={uid}
           onChange={(e) => setUID(e.target.value)}
         />
         <input
           type="text"
-          placeholder="Name"
+          placeholder="Name *"
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
         <input
           type="text"
-          placeholder="Gender"
+          placeholder="Gender *"
           value={gender}
           onChange={(e) => setGender(e.target.value)}
         />
@@ -89,19 +89,19 @@ const Form = () => {
         />
         <input
           type="text"
-          placeholder="Blood Group"
+          placeholder="Blood Group *"
           value={bldgroup}
           onChange={(e) => setBldgroup(e.target.value)}
         />
         <input
           type="date"
-          placeholder="Date Of Birth"
+          placeholder="Date Of Birth *"
           value={dob}
           onChange={(e) => setDOB(e.target.value)}
         />
         <input
           type="text"
-          placeholder="Address"
+          placeholder="Address *"
           value={address}
           onChange={(e) => setAddress(e.target.value)}
         />
