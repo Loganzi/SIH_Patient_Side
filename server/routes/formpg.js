@@ -26,8 +26,8 @@ router.post("/form", (req, res) => {
     obstetric,
     habits,
   } = req.body;
-  if (!uid || !name || !gender || !age || !bldgroup || !dob || !address) {
-    return res.status(422).json({ error: "uid already exists" });
+  if (!uid || !name || !gender || !bldgroup || !dob || !address) {
+    return res.status(422).json({ error: "Please enter all the fields" });
   }
   Form.findOne({ uid: uid }).then((savedUser) => {
     if (savedUser) {
