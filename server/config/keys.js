@@ -1,9 +1,8 @@
-module.exports={
-    MONGOURI:"mongodb+srv://ro:7n4ob8hvWBBTZQU2@cluster0.xdddt.mongodb.net/users?retryWrites=true&w=majority",
-	JWT_SECRET:"qwdfvyivyvgyiv"
-}
-
-
+module.exports = {
+  MONGOURI:
+    "mongodb+srv://ro:123@cluster0.quol4.mongodb.net/<dbname>?retryWrites=true&w=majority",
+  JWT_SECRET: "qwdfvyivyvgyiv",
+};
 
 /*
 if(process.env.NODE_ENV==='production'){
