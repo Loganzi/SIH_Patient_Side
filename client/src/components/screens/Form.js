@@ -166,7 +166,7 @@ const Form = () => {
           className="btn waves-effect waves-light #64b5f6 blue darken-1"
           onClick={() => PostForm()}
         >
-          Submit
+          <Link to="/profile">Submit</Link>
         </button>
       </div>
     </div>
