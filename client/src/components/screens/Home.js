@@ -16,7 +16,7 @@ const Home  = ()=>{
        })
     },[])
 
-    const likePost = (id)=>{
+    /*const likePost = (id)=>{
           fetch('/like',{
               method:"put",
               headers:{
@@ -92,7 +92,7 @@ const Home  = ()=>{
           }).catch(err=>{
               console.log(err)
           })
-    }
+    }*/
 
     const deletePost = (postid)=>{
         fetch(`/deletepost/${postid}`,{
@@ -126,7 +126,7 @@ const Home  = ()=>{
                             <div className="card-image">
                                 <img src={item.photo}/>
                             </div>
-                            <div className="card-content">
+                             {/*<div className="card-content">
                             <i className="material-icons" style={{color:"red"}}>favorite</i>
                             {item.likes.includes(state._id)
                             ? 
@@ -157,7 +157,7 @@ const Home  = ()=>{
                                   <input type="text" placeholder="add a comment" />  
                                 </form>
                                 
-                            </div>
+                            </div>*/}
                         </div> 
                    )
                })
