@@ -1,6 +1,8 @@
 import React,{useState,useEffect,useContext} from 'react'
 import {UserContext} from '../../App'
 import {Link} from 'react-router-dom'
+
+
 const Home  = ()=>{
     const [data,setData] = useState([])
     const {state,dispatch} = useContext(UserContext)
@@ -16,7 +18,7 @@ const Home  = ()=>{
        })
     },[])
 
-    /*const likePost = (id)=>{
+    const likePost = (id)=>{
           fetch('/like',{
               method:"put",
               headers:{
@@ -92,7 +94,7 @@ const Home  = ()=>{
           }).catch(err=>{
               console.log(err)
           })
-    }*/
+    }
 
     const deletePost = (postid)=>{
         fetch(`/deletepost/${postid}`,{
@@ -110,6 +112,7 @@ const Home  = ()=>{
         })
     }
    return (
+
        <div className="home">
            {
                data.map(item=>{
@@ -126,7 +129,7 @@ const Home  = ()=>{
                             <div className="card-image">
                                 <img src={item.photo}/>
                             </div>
-                             {/*<div className="card-content">
+                            <div className="card-content">
                             <i className="material-icons" style={{color:"red"}}>favorite</i>
                             {item.likes.includes(state._id)
                             ? 
@@ -157,7 +160,7 @@ const Home  = ()=>{
                                   <input type="text" placeholder="add a comment" />  
                                 </form>
                                 
-                            </div>*/}
+                            </div>
                         </div> 
                    )
                })
@@ -165,6 +168,7 @@ const Home  = ()=>{
           
           
        </div>
+
    )
 }
 

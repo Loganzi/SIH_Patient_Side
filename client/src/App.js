@@ -12,6 +12,7 @@ import { reducer, initialState } from "./reducers/userReducer";
 import UserProfile from "./components/screens/UserProfile";
 import SubscribedUserPosts from "./components/screens/SubscribesUserPosts";
 import Reset from "./components/screens/Reset";
+import PatientLogin from "./components/screens/PatientLogin";
 import NewPassword from "./components/screens/Newpassword";
 import Form from "./components/screens/Form";
 export const UserContext = createContext();
@@ -56,6 +57,10 @@ const Routing = () => {
       </Route>
       <Route exact path="/reset">
         <Reset />
+      </Route>
+
+	<Route path="/PatientLogin">
+        <PatientLogin />
       </Route>
       <Route path="/reset/:token">
         <NewPassword />
