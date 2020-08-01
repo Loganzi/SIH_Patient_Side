@@ -22,7 +22,7 @@ const Profile  = ()=>{
         data.append("file",image)
         data.append("upload_preset","insta-clone")
         data.append("cloud_name","rohanpillai9322")
-        fetch("https://api.cloudinary.com/v1_1/rohanpillai9322/image/upload",{   // CHANGE!!
+        fetch("https://api.cloudinary.com/v1_1/rohanpillai9322/image/upload",{   
             method:"post",
             body:data
         })

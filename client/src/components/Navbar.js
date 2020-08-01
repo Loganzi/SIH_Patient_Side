@@ -18,16 +18,16 @@ const NavBar = () => {
         <li key="1">
           <Link to="/form">Registration</Link>
         </li>,
-        <li key="2">
-          <Link to="/profile">Records</Link>
-        </li>,
-        <li key="3">
-          <Link to="/create">Create New Record</Link>
-        </li>,
-        //<li key="4"><Link to="/myfollowingpost">All Records</Link></li>,
+        //<li key="2">
+         // <Link to="/profile">Records</Link>
+        //</li>,
+        //<li key="3">
+          //<Link to="/create">Create New Record</Link>
+        //</li>,
+        <li key="4"><Link to="/PatientLogin">Patient Login</Link></li>,
         <li key="5">
           <button
-            className="btn #c62828 red darken-3"
+            className="btn #01579b light-blue darken-4"
             onClick={() => {
               localStorage.clear();
               dispatch({ type: "CLEAR" });
@@ -43,9 +43,9 @@ const NavBar = () => {
         <li key="6">
           <Link to="/signin">Signin</Link>
         </li>,
-        <li key="7">
-          <Link to="/signup">Signup</Link>
-        </li>,
+
+        
+        
       ];
     }
   };
@@ -68,9 +68,9 @@ const NavBar = () => {
   };
   return (
     <nav>
-      <div className="nav-wrapper blue">
+      <div className="nav-wrapper #bbdefb blue lighten-4 ">
         <Link to={state ? "/" : "/signin"} className="brand-logo left">
-          DIGITAL HEALTHCARE
+          Digital Healthcare
         </Link>
         <ul id="nav-mobile" className="right">
           {renderList()}
@@ -121,3 +121,10 @@ const NavBar = () => {
 };
 
 export default NavBar;
+
+
+/*
+<li key="7">
+          <Link to="/signup">Signup</Link>
+        </li>,
+*/

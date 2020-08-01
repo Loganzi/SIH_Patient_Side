@@ -29,7 +29,7 @@ const SignIn  = ()=>{
                localStorage.setItem("user",JSON.stringify(data.user))
                dispatch({type:"USER",payload:data.user})
                M.toast({html:"signedin success",classes:"#43a047 green darken-1"})
-               history.push('/')
+               history.push('/Form')
            }
         }).catch(err=>{
             console.log(err)
@@ -38,28 +38,26 @@ const SignIn  = ()=>{
    return (
       <div className="mycard">
           <div className="card auth-card input-field">
-            <h2>DIGITAL HEALTHCARE</h2>
+            <h2>Nurse Login</h2>
             <input
             type="text"
-            placeholder="SOME ID (RATION CARD ?) "
+            placeholder="Unique Identification Number "
             value={email}
             onChange={(e)=>setEmail(e.target.value)}
             />
             <input
             type="password"
-            placeholder="FACE AUTHETICATION"
+            placeholder="Password"
             value={password}
             onChange={(e)=>setPasword(e.target.value)}
             />
-            <button className="btn waves-effect waves-light #64b5f6 blue darken-1"
+            <button className="btn waves-effect waves-light blue "
             onClick={()=>PostData()}
             >
                 Login
             </button>
 	
-            <h6>
-                <Link to="/reset">Forgot password ? NOT MY PROBLEM</Link>
-            </h6>
+           
     
         </div>
       </div>
