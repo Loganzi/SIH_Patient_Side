@@ -62,8 +62,7 @@ const Routing = () => {
       <Route exact path="/reset">
         <Reset />
       </Route>
-
-      <Route path="/PatientLogin">
+	<Route path="/PatientLogin">
         <PatientLogin />
       </Route>
       <Route path="/reset/:token">
