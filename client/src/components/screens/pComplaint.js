@@ -56,7 +56,7 @@ const Complaint = () => {
   return (
     <div className="FormCard ">
       <div className="formcard input-field">
-        <h2 className="regFormH2">Patient Complaint Form</h2>
+        <h2 className="regFormH2">Active Patient Ailment Form</h2>
         <input
           type="text"
           placeholder="Aadhar/Ration Card/Govt. ID"
