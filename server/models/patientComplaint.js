@@ -50,7 +50,7 @@ const pComplaintSchema = new mongoose.Schema({
     required: false,
   },
   BP: {
-    type: Number,
+    type: String,
     required: false,
   },
 });

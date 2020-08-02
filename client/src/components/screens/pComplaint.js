@@ -103,7 +103,7 @@ const Complaint = () => {
         /> */}
         <input
           type="number"
-          placeholder="Weight (in kilograms"
+          placeholder="Weight (in kilograms)"
           value={weight}
           onChange={(e) => setWeight(e.target.value)}
         />
@@ -141,13 +141,13 @@ const Complaint = () => {
 
         <input
           type="text"
-          placeholder="Temperature"
+          placeholder="Temperature (F)"
           value={temperature}
           onChange={(e) => setTemp(e.target.value)}
         />
         <input
           type="text"
-          placeholder="Blood Pressure"
+          placeholder="Blood Pressure (Sym/Dist)"
           value={BP}
           onChange={(e) => setBP(e.target.value)}
         />
