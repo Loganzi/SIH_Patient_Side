@@ -16,12 +16,14 @@ mongoose.connection.on("error", (err) => {
 });
 
 require("./models/user");
+require("./models/patientComplaint");
 require("./models/form");
 require("./models/post");
 
 app.use(express.json());
 app.use(require("./routes/auth"));
 app.use(require("./routes/formpg"));
+app.use(require("./routes/pcomplaint"));
 app.use(require("./routes/post"));
 app.use(require("./routes/user"));
 
